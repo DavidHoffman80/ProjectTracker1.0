@@ -1,0 +1,35 @@
+.user-links {
+  height: 4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.user-links li {
+  display: inline-block;
+  width: 102px;
+  height: 4rem;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  font-weight: 700;
+}
+
+.user-links li:hover {
+  background: rgb(0, 7, 104);
+}
+
+.user-links li a {
+  line-height: 4rem;
+  padding: .5rem;
+}
+
+.user-links .avatar {
+  border-radius: 50%;
+  background: red;
+  padding: 0.75rem;
+  box-shadow: 3px 3px 20px darkgrey;
+}
