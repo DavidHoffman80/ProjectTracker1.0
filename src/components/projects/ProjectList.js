@@ -4,14 +4,15 @@ import './ProjectList.css';
 // COMPONENTS
 import ProjectSummary from './ProjectSummary';
 
-const ProjectList = () => {
+const ProjectList = ({projects}) => {
   return (
     <div className='projects-list'>
       <h3>Projects</h3>
-      <ProjectSummary />
-      <ProjectSummary />
-      <ProjectSummary />
-      <ProjectSummary />
+      { projects && projects.map(project => {
+        return (
+          <ProjectSummary project={project} key={project.id} />
+        )
+      })}
     </div>
   )
 }
